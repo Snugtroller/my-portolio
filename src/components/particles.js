@@ -7,6 +7,7 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 
 
 
+
 const ParticlesComponent = (props) => {
 
   const [init, setInit] = useState(false);
