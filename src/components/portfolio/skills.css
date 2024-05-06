@@ -1,0 +1,121 @@
+/* Updated CSS for Skills component */
+
+.title {
+    font-size: 30px;
+    color: rgb(255, 196, 0);
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.skill-border {
+    height: 480px;
+    width: 95%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around; /* Center the borders */
+}
+
+.each-border {
+    height: 600px;
+    width: 30%; /* Adjust width to allow better spacing */
+    border-radius: 20px;
+    background-color: #262525; /* Add background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Center the inner-box */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.each-border:hover{
+    transform: scale(1);
+    box-shadow: 0 0 10px #000000;
+}
+
+.title1 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center; /* Center the title */
+}
+
+.inner-box {
+    height: auto; /* Remove fixed height */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the small boxes */
+}
+
+.small-box {
+    border: 2px solid black;
+    height: 100px; /* Adjust height */
+    width: 40%; /* Adjust width */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Make it relative for absolute positioning */
+    background-color: #262525; /* Add background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+.small-box:hover {
+    transform: scale(1.05); /* Scale up the box on hover */
+    box-shadow: 0 0 20px #ffd633; /* Add a shadow on hover */
+}
+.small-box svg {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.dialogue-box {
+    position: absolute;
+    top: -25px; /* Adjust distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Background color */
+    color: white; /* Text color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1; /* Ensure it appears above the image */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.small-box:hover .dialogue-box {
+    opacity: 1; /* Show dialogue box on hover */
+}
+.fa-html5{
+    color: #e34c26;
+}
+.fa-css3{
+    color: #264de4;
+}
+.fa-js{
+    color:#fcdc00;
+}
+.fa-react{
+    color: rgb(97, 219, 251);
+}
+.fa-python{
+    color: #FFDE57;
+}
+.fa-java{
+    color: rgb(248, 152, 32);
+}
+.fa-RProject{
+    color: #165CAA;
+}
+.fa-database{
+    color: #00758F;
+}
+.fa-n{
+    color: #a8b9c0;
+}
+.fa-c{
+    color: #659ad2;
+}

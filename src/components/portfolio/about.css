@@ -1,0 +1,75 @@
+.about-border{
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 30px;
+    height: 550px;
+    width: 900px;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s ease;
+    overflow: hidden; /* Hide overflow content */
+    border: 2px solid transparent;
+}
+.about-page h2{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 350px;
+    color:rgb(255, 196, 0)  ;
+}
+.about-page h3{
+    padding-top:10px;
+    margin-left: 30px;
+    font-size: 25px;
+    color: rgb(255, 196, 0) ;
+}
+.about-page p{
+    margin-left: 30px;
+    padding-top: 10px;
+    color: white;
+}
+.about-page{
+    display: flex;
+}
+.about-page img{
+    margin-top: 20px;
+    margin-left: 100px;
+    height: 550px;
+    width: 400px;
+    transition: 1s ease;
+    border-radius: 30px;
+}
+.about-page img:hover{
+    -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+}
+.about-border:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: rgba(73, 73, 73, 0.8); /* Border color on hover */
+}
+.about-border h2,
+.about-border h3,
+.about-border p {
+    transition: color 0.5s ease; /* Smooth color transition */
+}
+
+.about-border:hover img {
+    transform: scale(1.05);
+}
+
+.about-border:hover h2 {
+    color: rgba(255, 196, 0, 0.8); /* Change the heading color on hover */
+}
+
+.about-border:hover h3 {
+    color: rgba(255, 196, 0, 0.8); /* Change the subheading color on hover */
+}
+
+.about-border:hover p {
+    color: rgba(255, 255, 255, 0.8); /* Change the paragraph color on hover */
+}
+
+
+ 

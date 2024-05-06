@@ -1,0 +1,195 @@
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgb(255, 185, 93);
+	--c2: rgba(255, 226, 168, 0.1);
+}
+.border {
+  padding-top: 50px;
+  margin-left: 5px;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  gap: 20px;
+  max-width: 1500px; /* Set a maximum width */
+}
+
+.derm, .tic, .weather, .game1, .co2 {
+  height: 400px;
+  width: 450px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.derm:hover, .tic:hover, .weather:hover, .game1:hover, .co2:hover {
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+.main-title {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(255, 196, 0);
+}
+
+.box-row {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  margin-top: 20px;
+  background-color:  #262525;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  width: calc(33.33% - 40px); /* Set width to 1/3 of the container width with gap included */
+
+  border: 0.1rem solid;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+  
+}
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+.box:hover {
+  transform: scale(1);
+  box-shadow: 0 0 10px #000000;
+}
+
+.project-description h2 {
+  color: rgb(255, 196, 0);
+}
+
+.project-description p {
+  color: white;
+}
+
+.project-description h3 {
+  margin-top: 10px;
+  color: rgb(255, 196, 0);
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.project-image:hover {
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+.project-description ul {
+  margin-left: 20px;
+  color: white;
+  list-style-type: none;
+}
+
+.project-details,
+.project-description,
+.project-links {
+  margin-top: 20px;
+}
+
+.project-details h2,
+.project-description h2,
+.project-links h2 {
+  margin-top: 0;
+}
+
+.project-details ul {
+  padding-left: 20px;
+}
+
+.project-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-links ul li {
+  margin-top: 10px;
+}
+
+.project-links ul li a {
+  text-decoration: none;
+  color: blue;
+}
+
+.project-links ul li a:hover {
+  text-decoration: underline;
+}
+/* Style the main scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Style the thumb of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #555; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners of the thumb */
+}
+
+/* Style the track of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #eee; /* Color of the scrollbar track */
+}
+
+/* Change scrollbar track and thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Color of the scrollbar thumb on hover */
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #ddd; /* Color of the scrollbar track on hover */
+}

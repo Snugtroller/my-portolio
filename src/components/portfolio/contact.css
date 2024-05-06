@@ -1,0 +1,197 @@
+/* Global styles */
+
+
+/* Title styles */
+.title h2 {
+  font-size: 36px; /* Larger font size */
+  margin-left: 30px;
+  margin-top: 40px; /* Increased margin top */
+  color: #ffcc00; /* Yellow color */
+}
+
+/* Contact form container styles */
+.contact-border {
+  border: 2px solid #333; /* Dark border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #262525; /* White background */
+  width: 80%; /* Adjusted width */
+  max-width: 1200px; /* Max width */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 30px; /* Spacing from the title */
+  padding: 20px; /* Padding inside */
+}
+
+/* Form border styles */
+.form-border {
+  border: 2px solid #333; /* Dark border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside */
+}
+
+/* Form title styles */
+.new-title {
+  font-size: 24px; /* Larger font size */
+  color: white; /* Dark color */
+  margin-bottom: 20px; /* Spacing at the bottom */
+  font-weight: 600;
+}
+
+/* Input field styles */
+.group {
+  margin-bottom: 20px; /* Spacing between input groups */
+}
+
+input,
+textarea {
+  font-size: 16px; /* Font size */
+  padding: 10px; /* Padding */
+  width: calc(100%); /* Full width */
+  border: none; /* Remove border */
+  border-bottom: 2px solid #ccc; /* Bottom border */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+input:focus,
+textarea:focus {
+  outline: none; /* Remove focus outline */
+  border-color: #ffcc00; /* Yellow border color on focus */
+}
+
+/* Label styles */
+label {
+  font-size: 18px; /* Font size */
+  color: #333; /* Dark color */
+  position: absolute; /* Position */
+  pointer-events: none; /* Disable pointer events */
+  left: 10px; /* Left position */
+  top: 10px; /* Top position */
+  transition: 0.2s ease all; /* Transition */
+}
+
+/* Active label state */
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -20px; /* Move label up */
+  font-size: 14px; /* Smaller font size */
+  color: #ffcc00; /* Yellow color */
+}
+
+/* Bottom bar styles */
+.bar {
+  position: relative; /* Position */
+  display: block; /* Display as block */
+  width: 100%; /* Full width */
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #ffcc00; /* Yellow color */
+  transition: 0.2s ease all; /* Transition */
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+/* Active bottom bar state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%; /* Increase width */
+}
+
+/* Highlighter styles */
+.highlight {
+  position: absolute; /* Position */
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none; /* Disable pointer events */
+  opacity: 0.5; /* Opacity */
+}
+
+/* Active highlighter state */
+input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease; /* Animation */
+}
+
+.submit-button {
+  font-size: 18px; 
+  padding: 12px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  background-color: #ffcc00; /* Yellow background color */
+  color: #333; /* Dark color */
+  cursor: pointer; /* Cursor pointer */
+  transition: background-color 0.3s ease; /* Transition */
+}
+
+/* Hover state for submit button */
+.submit-button:hover {
+  background-color: #ffd633; /* Lighter yellow */
+}
+
+/* Animation for input highlighter */
+@keyframes inputHighlighter {
+  from {
+    background: #ffcc00; /* Yellow color */
+  }
+  to {
+    width: 0;
+    background: transparent; /* Transparent background */
+  }
+}
+.logo-border {
+  margin-top: 30px;
+  margin-left: 450px;
+
+  height: 100px;
+  width: 600px;
+  display: flex; /* Make the social links display in a row */
+  justify-content: center; /* Center the social links horizontally */
+  align-items: center; /* Center the social links vertically */
+}
+
+.social-links a {
+  margin: 0 20px; /* Adjust spacing between the social icons */
+}
+
+.social-links a:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+.social-links a .fa-icon {
+  font-size: 40px; /* Adjust the size of the icons */
+}
+
+/* Adjust colors for specific icons */
+.fa-linkedin {
+  color: #0a66c2; /* LinkedIn color */
+  height: 40px;
+}
+
+.fa-github {
+  color: #333; /* GitHub color */
+  height: 40px;
+}
+
+.fa-instagram {
+  color: #bc2a8d; /* Instagram color */
+  height: 40px;
+}
+
+.fa-twitter {
+  color: #1da1f2; /* Twitter color */
+  height: 40px;
+}
