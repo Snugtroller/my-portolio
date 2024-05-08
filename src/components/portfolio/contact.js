@@ -32,6 +32,7 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          document.getElementById("alert").innerHTML="Your request has been submitted successfully";
         },
         (error) => {
           console.log("FAILED...", error); // Log the error message
@@ -97,6 +98,9 @@ const Contact = () => {
               value="Submit"
               className="submit-button"
             />
+          </div>
+          <div id="alert">
+
           </div>
           </form>
         </div>

@@ -195,3 +195,7 @@ input:focus ~ .highlight {
   color: #1da1f2; /* Twitter color */
   height: 40px;
 }
+#alert{
+  color: white;
+  font-size: 20px;
+}
