@@ -45,7 +45,7 @@ const Skills = () => {
             <div className="small-box"><FontAwesomeIcon icon={faJs} />JavaScript</div>
             <div className="small-box"><FontAwesomeIcon icon={faReact} />ReactJs</div>
             <div className="small-box"><CIcon icon={cibNextJs} />Next Js</div>
-            <div className="small-box"><FontAwesomeIcon icon={faFlask} />Flask</div>
+            
             <div className="small-box"><CIcon icon={cibTypescript} />TypeScript</div>
 
        
@@ -61,7 +61,7 @@ const Skills = () => {
             <div className="small-box"><FontAwesomeIcon icon={faC} />C++</div>
             <div className="small-box"><CIcon icon={cibTensorflow} />TensorFlow</div>
             <div className="small-box"><FontAwesomeIcon icon={faChartSimple} style={{color: "#74C0FC",}} />Matlab</div>
-            <div className="small-box"><CIcon icon={cibKeras} />Keras</div>
+            <div className="small-box"><FontAwesomeIcon icon={faFlask} />Flask</div>
           </div>
         </div>
         <div className="each-border">
