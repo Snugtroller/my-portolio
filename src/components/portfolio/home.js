@@ -24,17 +24,17 @@ const Home = () => {
   const [typeEffect]=useTypewriter({
     words:['Web Developer','Back End Developer','Data Engineer'],
     loop:{},
-    typeSpeed:100,
+    typeSpeed:40,
     deleteSpeed:40
   })
   const [typeEffect1]=useTypewriter({
     words:["Hey there,"],
-    typeSpeed:100,
+    typeSpeed:200,
     deleteSpeed:40
   })
   const [typeEffect2]=useTypewriter({
     words:["I am Suman"],
-    typeSpeed:100,
+    typeSpeed:250,
     deleteSpeed:40
   })
 
@@ -51,10 +51,10 @@ const Home = () => {
         <button className="resume-button" onClick={handleResumeClick}>
           Resume
         </button>
-      </div>
       <div className="below-type" style={{color:"white"}}>
         <span style={{fontWeight:"400"}}>I'm a <br/></span>
         <span style={{fontweight:'bold',marginLeft:'20px',color:"#ffc339"}}>{typeEffect}</span>
+      </div>
       </div>
     </div>
   );
