@@ -10,6 +10,7 @@ const About = () => {
   };
   return (
     <div>
+      <div className="gradient"></div>
       <Navbar />
       <div className="about-page">
         <img src={mine}></img>
@@ -54,7 +55,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 export default About;

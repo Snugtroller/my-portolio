@@ -10,13 +10,13 @@
     color: rgb(255, 196, 0);
     font-family: "Montserrat", sans-serif;
     overflow: hidden; 
-  border-right: .15em solid orange; 
+  /* border-right: .15em solid orange;  */
   white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .15em; 
-  animation: typing 5s steps(30, end),blink-caret .9s step-end infinite;
+  /* animation: typing 5s steps(30, end),blink-caret .9s step-end infinite; */
 }
-@keyframes typing {
+/* @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
@@ -24,7 +24,7 @@
   @keyframes blink-caret {
     from, to { border-color: blanchedalmond }
     50% { border-color: orange }
-  }
+  } */
 .resume-button{
   margin-top: 100px;
   margin-left: 600px;
@@ -48,7 +48,7 @@
 }
 
 .resume-button{
-  margin-top: 400px;
+  margin-top: 300px;
   display: block;
   width: 250px;
   height: 50px;
@@ -103,6 +103,7 @@
 height: 100px;
   width: 100%;
   font-size: 70px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
 }

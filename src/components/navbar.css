@@ -1,10 +1,12 @@
 .nav ul {
     display: flex;
+    /* flex-direction: rowz/; */
     gap: 250px;
     list-style-type: none;
-    font-size: 25px;
-    padding-top: 50px;
+    font-size: 20px;
+    padding-top: 35px;
     padding-left: 100px;
+    /* transition: transform 0.3s ease; */
   }
   
   .nav ul li {
@@ -15,6 +17,7 @@
     color: rgb(255, 196, 0);
     text-decoration: none;
     position: relative; /* Add relative positioning for pseudo-elements */
+    
   }
   
   .nav ul li a:hover {
@@ -43,7 +46,7 @@
   
   .nav {
     color: rgb(255, 196, 0);
-    height: 150px;
+    height: 100px;
     width: 100%;
     background-color: transparent;
     position: sticky;

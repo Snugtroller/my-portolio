@@ -27,14 +27,24 @@ const Home = () => {
     typeSpeed:100,
     deleteSpeed:40
   })
+  const [typeEffect1]=useTypewriter({
+    words:["Hey there,"],
+    typeSpeed:100,
+    deleteSpeed:40
+  })
+  const [typeEffect2]=useTypewriter({
+    words:["I am Suman"],
+    typeSpeed:100,
+    deleteSpeed:40
+  })
 
+  
   return (
     <div>
       <Navbar />
       <div className="main-page">
         <h2>
-          Hey There,
-          <br />I am Suman
+          {typeEffect1} <br/>{typeEffect2}
         </h2>
       </div>
       <div className="wrapper">
@@ -42,9 +52,9 @@ const Home = () => {
           Resume
         </button>
       </div>
-      <div className="below-type">
-        I'm a
-        <span style={{fontweight:'bold',marginLeft:'20px',color:'white'}}>{typeEffect}</span>
+      <div className="below-type" style={{color:"white"}}>
+        <span style={{fontWeight:"400"}}>I'm a <br/></span>
+        <span style={{fontweight:'bold',marginLeft:'20px',color:"#ffc339"}}>{typeEffect}</span>
       </div>
     </div>
   );
