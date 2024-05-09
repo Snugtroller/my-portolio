@@ -40,13 +40,12 @@ const Skills = () => {
         <div className="each-border">
           <div className="title1">Frontend</div>
           <div className="inner-box">
-            <div className="small-box"><FontAwesomeIcon icon={faHtml5} />HTML</div>
-            <div className="small-box"><FontAwesomeIcon icon={faCss3Alt} />CSS</div>
-            <div className="small-box"><FontAwesomeIcon icon={faJs} />JavaScript</div>
-            <div className="small-box"><FontAwesomeIcon icon={faReact} />ReactJs</div>
-            <div className="small-box"><CIcon icon={cibNextJs} />Next Js</div>
-            
-            <div className="small-box"><CIcon icon={cibTypescript} />TypeScript</div>
+            <div className="small-box"><a href="https://html.com/" target="blank"><FontAwesomeIcon icon={faHtml5} /></a>HTML</div>
+            <div className="small-box"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="blank"><FontAwesomeIcon icon={faCss3Alt} /></a>CSS</div>
+            <div className="small-box"><a href="https://www.javascript.com/" target="blank"><FontAwesomeIcon icon={faJs} /></a>JavaScript</div>
+            <div className="small-box"><a href="https://react.dev/" target="blank"><FontAwesomeIcon icon={faReact} /></a>ReactJs</div>
+            <div className="small-box"><a href="https://nextjs.org/" target="blank"><CIcon icon={cibNextJs} /></a>Next Js</div>
+            <div className="small-box"><a href="https://www.typescriptlang.org/" target="blank"><CIcon icon={cibTypescript} /></a>TypeScript</div>
 
        
           </div>
@@ -54,14 +53,13 @@ const Skills = () => {
         <div className="each-border">
           <div className="title1">Backend</div>
           <div className="inner-box">
-          <div className="small-box"><FontAwesomeIcon icon={faPython} />Python</div>
-            <div className="small-box"><FontAwesomeIcon icon={faJava} />Java</div>
-            <div className="small-box"><FontAwesomeIcon icon={faRProject} />R</div>
-            <div className="small-box"><FontAwesomeIcon icon={faDatabase} />SQL</div>
-            <div className="small-box"><FontAwesomeIcon icon={faC} />C++</div>
-            <div className="small-box"><CIcon icon={cibTensorflow} />TensorFlow</div>
-            <div className="small-box"><FontAwesomeIcon icon={faChartSimple} style={{color: "#74C0FC",}} />Matlab</div>
-            <div className="small-box"><FontAwesomeIcon icon={faFlask} />Flask</div>
+          <div className="small-box"><a href="https://www.python.org/" target="blank"><FontAwesomeIcon icon={faPython} /></a>Python</div>
+            <div className="small-box"><a href="https://www.java.com/en/" target="blank"><FontAwesomeIcon icon={faJava} /></a>Java</div>
+            <div className="small-box"><a href="https://www.r-project.org/about.html" target="blank"><FontAwesomeIcon icon={faRProject} /></a>R</div>
+            <div className="small-box"><a href="https://www.mysql.com//" target="blank"><FontAwesomeIcon icon={faDatabase} /></a>SQL</div>
+            <div className="small-box"><a href="https://cplusplus.com/" target="blank"><FontAwesomeIcon icon={faC} /></a>C++</div>
+            <div className="small-box"><a href="https://www.tensorflow.org/" target="blank"><CIcon icon={cibTensorflow} /></a>TensorFlow</div>
+            <div className="small-box"><a href="https://flask.palletsprojects.com/en/3.0.x/" target="blank"><FontAwesomeIcon icon={faFlask} /></a>Flask</div>
           </div>
         </div>
         <div className="each-border">

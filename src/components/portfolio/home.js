@@ -29,12 +29,12 @@ const Home = () => {
   })
   const [typeEffect1]=useTypewriter({
     words:["Hey there,"],
-    typeSpeed:200,
+    typeSpeed:150,
     deleteSpeed:40
   })
   const [typeEffect2]=useTypewriter({
     words:["I am Suman"],
-    typeSpeed:250,
+    typeSpeed:200,
     deleteSpeed:40
   })
 
