@@ -16,7 +16,7 @@
   /* border-right: .15em solid orange;  */
   white-space: nowrap; 
   margin: 0 auto; 
-  letter-spacing: .15em; 
+  letter-spacing: .15em;
   /* animation: typing 5s steps(30, end),blink-caret .9s step-end infinite; */
 }
 /* @keyframes typing {
@@ -69,6 +69,7 @@
   text-transform: uppercase;
   transition: all .35s;
   margin-right: 600px;
+  cursor: pointer;
 }
 
 .resume-button:before,

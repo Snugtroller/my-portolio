@@ -8,7 +8,7 @@
 .title h2 {
   font-size: 36px; /* Larger font size */
   margin-left: 30px;
-  margin-top: 40px; /* Increased margin top */
+  margin-top: 10px; /* Increased margin top */
   color: #ffcc00; /* Yellow color */
 }
 
@@ -22,6 +22,7 @@
   margin: 0 auto; /* Center horizontally */
   margin-top: 30px; /* Spacing from the title */
   padding: 20px; /* Padding inside */
+  overflow: hidden;
 }
 
 /* Form border styles */
@@ -29,6 +30,7 @@
   border: 2px solid #333; /* Dark border */
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside */
+  overflow: hidden;
 }
 
 /* Form title styles */
@@ -52,6 +54,8 @@ textarea {
   border: none; /* Remove border */
   border-bottom: 2px solid #ccc; /* Bottom border */
   background-color: #f9f9f9; /* Light background color */
+
+
 }
 
 input:focus,

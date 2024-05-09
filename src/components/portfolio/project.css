@@ -24,6 +24,7 @@
 	--gradY: 50%;
 	--c1: rgb(255, 185, 93);
 	--c2: rgba(255, 226, 168, 0.1);
+  
 }
 .border {
   padding-top: 50px;
@@ -32,6 +33,7 @@
   flex-wrap: wrap; /* Allow flex items to wrap to the next line */
   gap: 20px;
   max-width: 1500px; /* Set a maximum width */
+  overflow: hidden;
 }
 
 .derm, .tic, .weather, .game1, .co2 {
@@ -41,9 +43,6 @@
   transition: transform 0.3s ease; /* Add transition effect */
 }
 
-.derm:hover, .tic:hover, .weather:hover, .game1:hover, .co2:hover {
-   /* Increase size on hover */
-}
 
 .main-title {
   margin-left: 20px;
