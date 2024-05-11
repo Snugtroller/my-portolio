@@ -8,6 +8,7 @@ import { faDatabase ,faN,faC,faFlask,faT,faChartSimple} from '@fortawesome/free-
 import CIcon from '@coreui/icons-react';
 import { cibTensorflow,cibTypescript,cibNextJs,cibKeras } from '@coreui/icons';
 import Typewriter from "typewriter-effect";
+import { Modal, Button } from 'react-bootstrap';
 const SmallBox = ({ type }) => {
     return (
       <div className="small-box">

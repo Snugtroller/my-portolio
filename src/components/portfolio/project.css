@@ -28,12 +28,14 @@
 }
 .border {
   padding-top: 50px;
-  margin-left: 5px;
+
   display: flex;
   flex-wrap: wrap; /* Allow flex items to wrap to the next line */
   gap: 20px;
+  margin: 10px auto;
   max-width: 1500px; /* Set a maximum width */
   overflow: hidden;
+  
 }
 
 .derm, .tic, .weather, .game1, .co2 {

@@ -3,6 +3,8 @@ import Navbar from "../navbar";
 import { useNavigate } from "react-router-dom";
 import "./about.css";
 import mine from '../my.jpeg';
+import { Fade } from "react-awesome-reveal";
+
 const About = () => {
   const navigate = useNavigate();
   const handleTabClick = (path) => {
@@ -15,8 +17,10 @@ const About = () => {
       <div className="about-page">
         <img src={mine}></img>
         <div className="about-border">
+          <Fade>
           <h2>My Story</h2>
           <h3>My Journey</h3>
+          </Fade>
           <p>
             I pursued my secondary education at Delhi Public School Bangalore
             East (DPS) and am currently enrolled in my second year of Bachelor
@@ -34,7 +38,9 @@ const About = () => {
             demonstrated my ability to implement algorithms and analyze data
             effectively.
           </p>
+          <Fade>
           <h3>My Vision</h3>
+          </Fade>
           <p>
             With a profound commitment to utilizing technology for sustainable
             development, my primary objective is to engineer innovative
