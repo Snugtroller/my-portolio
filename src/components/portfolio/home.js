@@ -52,7 +52,7 @@ const Home = () => {
           Resume
         </button>
       <div className="below-type" style={{color:"white"}}>
-        <span style={{fontWeight:"400"}}>I'm a <br/></span>
+        <span style={{fontWeight:"400",marginLeft:"8%"}}>I'm a</span>
         <span style={{fontweight:'bold',marginLeft:'20px',color:"#ffc339"}}>{typeEffect}</span>
       </div>
       </div>
