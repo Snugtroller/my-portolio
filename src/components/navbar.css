@@ -1,3 +1,13 @@
+.nav {
+  color: rgb(255, 196, 0);
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  position: sticky;
+  z-index:999;
+  transition: background-color 1s ease;
+}
+
 .nav ul {
     display: flex;
     /* flex-direction: rowz/; */
@@ -42,15 +52,6 @@
     to {
       width: 100%;
     }
-  }
-  
-  .nav {
-    color: rgb(255, 196, 0);
-    height: 100px;
-    width: 100%;
-    background-color: transparent;
-    position: sticky;
-    transition: background-color 1s ease;
   }
   
   .nav:hover {
