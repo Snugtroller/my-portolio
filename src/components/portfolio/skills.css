@@ -40,7 +40,24 @@
     color: rgb(255, 255, 255);
     text-align: center; /* Center the title */
 }
-
+.front{
+    height: 60px;
+    width: 60px;
+    margin-left:270px;
+    margin-top: -130px;
+}
+.back{
+    height: 60px;
+    width: 60px;
+    margin-left:270px;
+    margin-top: -70px;
+}
+.tech{
+    height: 60px;
+    width: 60px;
+    margin-left:330px;
+    margin-top: -120px;
+}
 .inner-box {
     height: auto; /* Remove fixed height */
     display: flex;
@@ -50,7 +67,7 @@
 }
 
 .small-box {
-    border: 2px solid black;
+    border: 2px solid transparent;
     height: 90px; /* Adjust height */
     width: 40%; /* Adjust width */
     border-radius: 20px;
@@ -58,15 +75,64 @@
     align-items: center;
     justify-content: center;
     position: relative; /* Make it relative for absolute positioning */
-    background-color: #262525; /* Add background color */
+    background-color: #383838; /* Add background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: white;
+    --border-width: 3px;
+    overflow: hidden; /* To clip the ::before pseudo-element */
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(
+            60deg,
+            hsl(200, 100%, 70%),
+            hsl(220, 90%, 65%),
+            hsl(240, 80%, 60%),
+            hsl(260, 70%, 55%),
+            hsl(280, 60%, 50%),
+            hsl(300, 50%, 45%),
+            hsl(320, 60%, 50%),
+            hsl(340, 70%, 55%),
+            hsl(360, 80%, 60%),
+            hsl(20, 90%, 65%),
+            hsl(40, 100%, 70%)
+        );
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        border-radius: 23px; /* Ensure this is slightly larger than the outer border-radius */
+        z-index: -1;
+        animation: moveGradient 2s alternate infinite, pulseGlow 2s infinite;
+    }
 }
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    }
+}
+
 
 .small-box:hover {
     transform: scale(1.05); /* Scale up the box on hover */
-    box-shadow: 0 0 20px #ffd633; /* Add a shadow on hover */
+   
 }
 .small-box svg {
     height: 50px;

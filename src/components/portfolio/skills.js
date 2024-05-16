@@ -9,6 +9,9 @@ import CIcon from '@coreui/icons-react';
 import { cibTensorflow,cibTypescript,cibNextJs,cibKeras } from '@coreui/icons';
 import Typewriter from "typewriter-effect";
 import { Modal, Button } from 'react-bootstrap';
+import front from "../front-end.png";
+import back from "../backend.png";
+import tech from "../virtual-reality.png";
 const SmallBox = ({ type }) => {
     return (
       <div className="small-box">
@@ -39,7 +42,8 @@ const Skills = () => {
         </div>
       <div className="skill-border">
         <div className="each-border">
-          <div className="title1">Frontend</div>
+          <div className="title1">Frontend </div>
+          <img className="front" src={front}></img>
           <div className="inner-box">
             <div className="small-box"><a href="https://html.com/" target="blank"><FontAwesomeIcon icon={faHtml5} /></a>HTML</div>
             <div className="small-box"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="blank"><FontAwesomeIcon icon={faCss3Alt} /></a>CSS</div>
@@ -53,6 +57,7 @@ const Skills = () => {
         </div>
         <div className="each-border">
           <div className="title1">Backend</div>
+          <img className="back" src={back}></img>
           <div className="inner-box">
           <div className="small-box"><a href="https://www.python.org/" target="blank"><FontAwesomeIcon icon={faPython} /></a>Python</div>
             <div className="small-box"><a href="https://www.java.com/en/" target="blank"><FontAwesomeIcon icon={faJava} /></a>Java</div>
@@ -65,6 +70,7 @@ const Skills = () => {
         </div>
         <div className="each-border">
           <div className="title1">Other Technologies</div>
+          <img className="tech" src={tech}></img>
           <div className="inner-box">
           <div className="small-box">Machine Learning</div>
             <div className="small-box">Web Dev</div>
