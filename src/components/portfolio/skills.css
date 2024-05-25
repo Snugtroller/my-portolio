@@ -68,6 +68,7 @@
 }
 
 .small-box {
+    cursor: pointer;
     border: 2px solid transparent;
     height: 90px; /* Adjust height */
     width: 40%; /* Adjust width */
@@ -129,8 +130,6 @@
         box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
     }
 }
-
-
 .small-box:hover {
     transform: scale(1.05); /* Scale up the box on hover */
    
@@ -140,23 +139,6 @@
     margin-right: 10px;
 }
 
-.dialogue-box {
-    position: absolute;
-    top: -25px; /* Adjust distance from the top */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8); /* Background color */
-    color: white; /* Text color */
-    padding: 5px 10px;
-    border-radius: 5px;
-    z-index: 1; /* Ensure it appears above the image */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition */
-}
-
-.small-box:hover .dialogue-box {
-    opacity: 1; /* Show dialogue box on hover */
-}
 .fa-html5{
     color: #e34c26;
 }
@@ -190,3 +172,66 @@
 *{
     font-family: "Poppins", sans-serif;
   }
+.modal{
+    z-index: 1050; /* Ensure the modal appears on top */
+
+}
+ /* Modal specific styles */
+/* Modal specific styles */
+.modal.show {
+    display: block; /* Ensure the modal is displayed */
+    z-index: 1050; /* Ensure the modal appears on top */
+    position: fixed; /* Fix the modal in place */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    height: 200px; /* Prevent modal from going out of view */
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.modal-backdrop.show {
+    z-index: 1040; /* Ensure the backdrop appears behind the modal */
+}
+
+.modal-content {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1051; /* Ensure the modal content is in front */
+    background-color: #fff; /* Ensure the modal content is visible */
+    width: 800px; /* Increase the width */
+    height: 200px; /* Increase the height */
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.modal-body {
+    padding: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 370px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
