@@ -120,7 +120,7 @@ const Project = () => {
             <div className="box">
               <img className="co2" src={co2} alt="Project"></img>
               <div className="project-description">
-                <h2>CO2 Emission</h2>
+                <h2>CO2 Emission Predictor</h2>
                 <p>
                   A machine learning project on CO2 emissions from vehicles
                   could involve analyzing vehicle characteristics such as engine
