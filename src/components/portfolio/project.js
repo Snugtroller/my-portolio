@@ -6,10 +6,12 @@ import derm from "../derm.jpg";
 import game1 from "../game2.webp";
 import img1 from "./skin.avif";
 import weather from "../weather.jpg";
-import tic from "../tic tac toe.avif";
+import garden from "../garden.jpg";
 import co2 from "../co2.jpg";
 import Typewriter from "typewriter-effect";
 import inventory from "../inventory.png";
+import hand from "../hand-gesture.avif";
+import speech from "../speech.webp";
 
 const Project = () => {
   const navigate = useNavigate();
@@ -98,22 +100,26 @@ const Project = () => {
             </div>
             <div className="box-row">
               <div className="box">
-                <img className="tic" src={tic} alt="Project"></img>
+                <img className="tic" src={garden} alt="Project"></img>
                 <div className="project-description">
-                  <h2>Tic Tac Toe</h2>
+                  <h2>Garden Scapes - A 3D Interactive Website</h2>
                   <p>
-                    Tic-tac-toe is a two-player game played on a 3x3 grid.
-                    Players take turns marking empty squares with their symbols
-                    (X or O). The first player to get three of their symbols in
-                    a row wins. If the grid fills up without a winner, the game
-                    ends in a draw.
+                    For my Smart India Hackathon 2024 project, I developed a 3D
+                    virtual garden model for AYUSH using Blender and integrated
+                    it with Three.js in a React.js application. The project
+                    offers an interactive 3D experience where users can explore
+                    ayurvedic plants, and by hovering over a plant, they can
+                    view detailed information about it. This blend of 3D
+                    modeling and educational content provides an engaging way to
+                    learn about the significance of these plants in traditional
+                    medicine.
                   </p>
                   <h3>Technologies Used</h3>
                   <ul>
-                    <li>TypeScript</li>
-                    <li>CSS</li>
                     <li>JavaScript</li>
-                    <li>HTML</li>
+                    <li>ThreeJS</li>
+                    <li>Blender</li>
+                    <li>ReactJs</li>
                   </ul>
                 </div>
               </div>
@@ -161,7 +167,49 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div className="box-row"></div>
+            <div className="box-row">
+              <div className="box">
+                <img className="co2" src={hand} alt="Project"></img>
+                <div className="project-description">
+                  <h2>Hand Gesture Recognition</h2>
+                  <p>
+                    This project implements real-time hand gesture recognition
+                    using OpenCV for video processing and MediaPipe for
+                    detecting hand landmarks. It enables gesture-based control
+                    and interaction by recognizing key hand movements, with
+                    potential applications in sign language recognition and
+                    touchless interfaces.
+                  </p>
+                  <h3>Technologies Used</h3>
+                  <ul>
+                    <li>OpenCV</li>
+                    <li>Media Pipe</li>
+                    <li>Deep Learning</li>
+                    <li>Computer Vision</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="box">
+                <img className="co2" src={speech} alt="Project"></img>
+                <div className="project-description">
+                  <h2>Speech Recognition </h2>
+                  <p>
+                    This speech recognition system records audio, extracts MFCC
+                    features, and passes them into a pre-trained model to
+                    predict the spoken word. The prediction is then decoded into
+                    a human-readable label using a LabelEncoder,providing
+                    accurate word recognition based on the audio input.
+                  </p>
+                  <h3>Technologies Used</h3>
+                  <ul>
+                    <li>Librosa</li>
+                    <li>Deep Learning</li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="box"></div>
+            </div>
           </div>
         </div>
       </div>

@@ -169,7 +169,7 @@ const Skills = () => {
               onClick={() =>
                 handleOpenModal(
                   "Machine Learning",
-                  "I have completed a supervised machine learning course on Coursera by Andrew Ng, as well as several other courses from YouTube. I have experience building models using various algorithms and am familiar with libraries such as TensorFlow, Keras, Matplotlib, Pandas, NumPy, and many others."
+                  "I have completed a supervised machine learning course on Coursera by Andrew Ng, as well as several other courses from YouTube. I have experience building models using various algorithms and am familiar with libraries such as TensorFlow, Keras, Matplotlib, Pandas, NumPy, and many others. "
                 )
               }
             >
@@ -192,7 +192,7 @@ const Skills = () => {
               onClick={() =>
                 handleOpenModal(
                   "Neural Networking",
-                  "Currently working on this tech."
+                  "I have completed specialized courses on Neural Networking from MathWorks, enhancing my expertise in this field. Have completed few projects like Hand Gesture Detection, Audio Recognition System and Plant Disease Detection."
                 )
               }
             >
@@ -203,7 +203,7 @@ const Skills = () => {
               onClick={() =>
                 handleOpenModal(
                   "Image Processing",
-                  "I have completed several courses from MathWorks and Great Learning. During my college studies, I took a course on Digital Image Processing. I have experience with tools such as OpenCV, MATLAB, and Roboflow. Additionally, in one of the hackathons, my team and I built a full-stack project focused on skin detection."
+                  "I have completed several courses from MathWorks and Great Learning. During my college studies, I took a course on Digital Image Processing. I have experience with tools such as OpenCV, MATLAB, Media Pipe and Roboflow. Additionally, in one of the hackathons, my team and I built a full-stack project focused on skin detection."
                 )
               }
             >
