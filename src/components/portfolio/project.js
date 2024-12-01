@@ -12,6 +12,7 @@ import Typewriter from "typewriter-effect";
 import inventory from "../inventory.png";
 import hand from "../hand-gesture.avif";
 import speech from "../speech.webp";
+import disease from "../plantDiseases.png";
 
 const Project = () => {
   const navigate = useNavigate();
@@ -208,7 +209,26 @@ const Project = () => {
                   </ul>
                 </div>
               </div>
-              <div className="box"></div>
+              <div className="box">
+                <img className="co2" src={disease} alt="Project"></img>
+                <div className="project-description">
+                  <h2>Plant Disease Detection </h2>
+                  <p>
+                    This project presents an intelligent system for plant
+                    disease detection, whereby diseases are identified from
+                    images of the leaves of the plants with VGG16 as a
+                    pre-trained model in feature extraction and
+                    RandomForestClassifier for classification.
+                  </p>
+                  <h3>Technologies Used</h3>
+                  <ul>
+                    <li>VGG16</li>
+                    <li>ML Model</li>
+                    <li>OpenCV</li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
