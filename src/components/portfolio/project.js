@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../navbar";
 import "./project.css";
@@ -41,22 +41,22 @@ const Project = () => {
           <div className="box-container">
             <div className="box-row">
               <div className="box">
-                <img className="derm" src={derm} alt="Project"></img>
+                <img className="co2" src={disease} alt="Project"></img>
                 <div className="project-description">
-                  <h2>Skin Disease Detection</h2>
+                  <h2>Plant Disease Detection </h2>
                   <p>
-                    With the help of machine learning we can predict the type of
-                    skin disease. This website allows to upload an image and the
-                    model will predict whether that part of the skin is infected
-                    or not. If it is, the model will predict the type of skin
-                    disease.
+                    This project presents an intelligent system for plant
+                    disease detection, whereby diseases are identified from
+                    images of the leaves of the plants with VGG16 as a
+                    pre-trained model in feature extraction and
+                    RandomForestClassifier for classification.
                   </p>
                   <h3>Technologies Used</h3>
                   <ul>
-                    <li>ML Tools</li>
-                    <li>ReactJs</li>
-                    <li>API</li>
-                    <li>Roboflow</li>
+                    <li>VGG16</li>
+                    <li>ML Model</li>
+                    <li>OpenCV</li>
+                    <li></li>
                   </ul>
                 </div>
               </div>
@@ -210,22 +210,22 @@ const Project = () => {
                 </div>
               </div>
               <div className="box">
-                <img className="co2" src={disease} alt="Project"></img>
+                <img className="derm" src={derm} alt="Project"></img>
                 <div className="project-description">
-                  <h2>Plant Disease Detection </h2>
+                  <h2>Skin Disease Detection</h2>
                   <p>
-                    This project presents an intelligent system for plant
-                    disease detection, whereby diseases are identified from
-                    images of the leaves of the plants with VGG16 as a
-                    pre-trained model in feature extraction and
-                    RandomForestClassifier for classification.
+                    With the help of machine learning we can predict the type of
+                    skin disease. This website allows to upload an image and the
+                    model will predict whether that part of the skin is infected
+                    or not. If it is, the model will predict the type of skin
+                    disease.
                   </p>
                   <h3>Technologies Used</h3>
                   <ul>
-                    <li>VGG16</li>
-                    <li>ML Model</li>
-                    <li>OpenCV</li>
-                    <li></li>
+                    <li>ML Tools</li>
+                    <li>ReactJs</li>
+                    <li>API</li>
+                    <li>Roboflow</li>
                   </ul>
                 </div>
               </div>

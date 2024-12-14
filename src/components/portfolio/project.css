@@ -131,7 +131,8 @@
 }
 
 .project-image:hover {
-  transform: scale(1.05); /* Increase size on hover */
+  transform: scale(1.05); 
+
 }
 
 .project-description ul {
