@@ -17,7 +17,7 @@ const Home = () => {
   const handleResumeClick = () => {
     // Replace 'resume_document_url' with the actual URL of your resume document
     const resumeDocumentUrl =
-      "https://drive.google.com/file/d/1f-vQY7zhfVguVmdAx0clhHIqXBHJ9Ivn/view?usp=sharing"; // Example URL
+      "https://drive.google.com/file/d/1np-LjvQ6ya-Ty0uCxHB4mnGGnEzVAkdO/view?usp=sharing"; // Example URL
     handleTabClick(resumeDocumentUrl);
   };
 

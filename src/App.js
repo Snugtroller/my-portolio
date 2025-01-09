@@ -13,7 +13,7 @@ import './App.css';
 function App() {
   const location=useLocation();
   const renderParticleJsInHomePage=location.pathname==="/";
-  return (
+  return (  
     <div className="App">
       
       {
